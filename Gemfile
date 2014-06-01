@@ -38,3 +38,12 @@ gem 'spring',        group: :development
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
+group :development, :test do
+  gem "minitest-spec-rails"
+end
+
+group :development do
+end
+
+group :test do
+end
