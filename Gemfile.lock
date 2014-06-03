@@ -168,7 +168,7 @@ GEM
       coffee-rails
     typhoeus (0.6.8)
       ethon (>= 0.7.0)
-    tzinfo (1.2.0)
+    tzinfo (1.2.1)
       thread_safe (~> 0.1)
     uglifier (2.5.0)
       execjs (>= 0.3.0)
