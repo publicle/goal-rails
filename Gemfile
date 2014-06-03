@@ -43,7 +43,9 @@ group :development, :test do
 end
 
 group :development do
+  gem "travis"
 end
 
 group :test do
+  gem "coveralls", :require => false
 end
