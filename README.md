@@ -1,4 +1,4 @@
-# goal-rails
+goal-rails
 ==========
 [![Build Status](https://travis-ci.org/publicle/goal-rails.svg)](https://travis-ci.org/publicle/goal-rails) [![Coverage Status](https://coveralls.io/repos/publicle/goal-rails/badge.png)](https://coveralls.io/r/publicle/goal-rails)
 
