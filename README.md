@@ -6,4 +6,5 @@ Todo Tree, Issue Tracking System
 
 ## License
 AGPL v3. See LICENSE for details.
-Michiaki Baba has a right to change the license including contributed patches.
+
+Michiaki Baba has a right to change the license including contributed patches. This is not for changing to a proprietary software but for cutting out a library.
