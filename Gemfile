@@ -47,5 +47,7 @@ group :development do
 end
 
 group :test do
+  gem "pg"
+  gem "sqlite3"
   gem "coveralls", :require => false
 end

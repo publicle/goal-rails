@@ -1,17 +1,18 @@
 language: ruby
 rvm:
-  - 2.1.0
-  - 2.1.1
-  - 2.1.2
+  - 2.1
 
 gemfile:
   - Gemfile
 
 env:
-  - DB=mysql
+  - DB=mysql    DATABASE_ADAPTER=mysql2
+  - DB=postgres DATABASE_ADAPTER=postgresql
+  - DB=sqlite3  DATABASE_ADAPTER=sqlite3
 
 before_script:
-  - mysql -e 'create database `goal-rails_test`;'
+  - sh -c "if [ '$DB' = 'mysql' ];    then mysql -e 'create database `goal-rails_test`;           fi"
+  - sh -c "if [ '$DB' = 'postgres' ]; then psql  -c 'create database `goal-rails_test` -U travis; fi"
 
 #script:
   #- RAILS_ENV=test bundle exec rake --trace db:migrate
