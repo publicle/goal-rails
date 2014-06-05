@@ -19,7 +19,7 @@ default: &default
 
 development:
   <<: *default
-  database: goal-rails_development
+  database: goal_rails_development
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
@@ -33,14 +33,14 @@ test:
   username: travis
   password:
   socket: /tmp/mysql.sock
-  database: goal-rails_test
+  database: goal_rails_test
 <% when "postgres" %>
   adapter: postgresql
   encoding: utf8
   pool: 5
   username: travis
   password:
-  database: goal-rails_test
+  database: goal_rails_test
 <% when "sqlite3" %>
   adapter: sqlite3
   database: ":memory:"
@@ -67,6 +67,6 @@ test:
 #
 production:
   <<: *default
-  database: goal-rails_production
-  username: goal-rails
+  database: goal_rails_production
+  username: goal_rails
   password: <%= ENV['GOAL_RAILS_DATABASE_PASSWORD'] %>
