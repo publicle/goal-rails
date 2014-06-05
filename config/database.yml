@@ -30,7 +30,7 @@ test:
   adapter: mysql2
   encoding: utf8
   pool: 5
-  username: travis
+  username: root
   password:
   socket: /tmp/mysql.sock
   database: goal_rails_test
@@ -38,10 +38,10 @@ test:
   adapter: postgresql
   encoding: utf8
   pool: 5
-  username: travis
+  username: postgres
   password:
   database: goal_rails_test
-<% when "sqlite3" %>
+<% when "sqlite" %>
   adapter: sqlite3
   database: ":memory:"
   timeout: 500
