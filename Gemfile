@@ -41,13 +41,11 @@ gem 'spring',        group: :development
 group :development, :test do
   gem "minitest-rails"
 end
-
 group :development do
   gem "travis"
 end
-
 group :test do
-  gem "pg"
-  gem "sqlite3"
+  gem "pg" if ENV["DB"] == "postgres"
+  gem "sqlite3" if ENV["DB"] == "sqlite"
   gem "coveralls", :require => false
 end
